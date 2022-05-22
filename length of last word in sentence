@@ -1,0 +1,22 @@
+<script>
+ 
+// Javascript program for implementation
+// of efficient approach to find length
+// of last word
+function length(str)
+{
+     
+    // Split by space and converting
+    // String to list and
+    var lis = str.split(" ")
+    return lis[lis.length - 1].length;
+}
+ 
+// Driver code
+var str = "Geeks for Geeks"
+document.write("The length of last word is " +
+               length(str));
+ 
+// This code is contributed by bunnyram19
+ 
+</script>
