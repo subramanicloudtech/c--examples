@@ -1,0 +1,25 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+    
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int i = 0;
+        
+        Simple(i);
+        
+        int k = i;
+        
+        Console.WriteLine(i);
+        Console.WriteLine(k);
+    }
+    
+    static void Simple(int j)
+    {
+        j = 101;
+        //Console.WriteLine(j);
+    }
+}
