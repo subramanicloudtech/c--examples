@@ -23,3 +23,44 @@ public class HelloWorld
         //Console.WriteLine(j);
     }
 }
+
+
+Passing a Reference Type
+====
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+    
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        var student = new Student
+		{
+			Name = "Susan",
+			Enrolled = false
+		};
+
+		Enroll(student);
+		
+		Console.WriteLine(student.Name);
+		Console.WriteLine(student.Enrolled);
+    }
+    
+    static void Enroll(Student student)
+	{
+		student.Enrolled = true; 
+		student = new Student(); 
+		student.Enrolled = false; 
+		student.Name = "New name"; 
+		Console.WriteLine(student.Name);
+		Console.WriteLine(student.Enrolled);
+	}
+}
+
+public class Student 
+{
+	public string Name {get;set;}
+	public bool Enrolled {get;set;}
+}
