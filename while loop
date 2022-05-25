@@ -1,0 +1,21 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        //Teacher teacher = new Teacher();
+        //teacher.Hello();
+        
+        //Student student = new Student();
+        //student.Hello();
+        
+        string[] str = new string[5]{ "Element 1", "Element 2", "Element 3", "Element 4",  "Element 5"};
+        int i = 0;
+        while(str[i] != "Element 5")
+        {
+            i++;
+        }
+        Console.WriteLine (str[i]);
+    }
+}
