@@ -1,0 +1,25 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+    
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        voidFibonacci_Iterative(10);
+    }
+    
+    public static void voidFibonacci_Iterative(int n)  
+    {  
+        int a = 0, b = 1, c = 0;  
+        Console.Write("{0} {1}\t", a,b);  
+        for (int i = 1; i< n; i++)
+        {
+            c = a + b;
+            Console.Write("{0} ", c); 
+            a = b;
+            b = c;
+        }
+    }
+}
